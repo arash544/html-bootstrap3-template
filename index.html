@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <title>Document</title>
+    <style>
+        body {
+            background: #fff;
+            color: #666666;
+            font-family: "Open Sans", sans-serif;
+            overflow-x: hidden;
+            position: relative;
+
+        }
+
+        .logo {
+            margin-top: 30px;
+        }
+
+        .logo-scroll {
+            margin-top: 30px;
+        }
+
+        .list-nav li {
+            display: inline;
+            float: left;
+            margin-top: 20px;
+        }
+
+        .list-nav-scroll li {
+            display: inline;
+            float: left;
+            margin-top: 20px;
+        }
+
+        .nav-size {
+            height: 70px;
+            background-color: transparent;
+
+        }
+
+        .nav-size-scroll {
+            height: 90px;
+            background-color: transparent;
+            border: 1px solid;
+            opacity: 0.7;
+            background-color: #131212;
+
+        }
+
+        .btn-icon {
+            margin-top: -45px;
+        }
+
+        .icon-bar {
+            background-color: #fff;
+        }
+
+        .top-img {
+            width: 100%;
+            height: 100vh;
+            background: url(../img/hero-bg.jpg) top center;
+            background-size: cover;
+            position: relative;
+
+        }
+
+        .darken-overlay div {
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            left: 0;
+            right: 0;
+
+        }
+
+        a {
+            color: #fff;
+        }
+
+        .body-content {
+            margin-top: -500px;
+            color: #fff;
+            text-align: center;
+        }
+
+        .body-content h1 {
+            font-weight: bolder;
+            font-size: 46px;
+        }
+
+        .body-content h4 {
+            letter-spacing: 1px;
+            font-size: 26px;
+        }
+
+        .drop-down-list:hover {
+            background-color: #2dca98;
+
+
+        }
+
+        .dropdown-menu li {
+            padding-right: 70px;
+        }
+
+        .dropdown-menu {
+            padding-left: -50px;
+        }
+
+        .btn-head {
+            margin: 70px;
+            text-align: center;
+        }
+
+        .btn-head button {
+            color: #fff;
+            font-weight: bolder;
+            font-size: 16px;
+            border: 2px solid #fff;
+            border-radius: 50px;
+            padding: 10px 30px 10px 30px;
+        }
+
+        .btn-head button:hover {
+            background-color: #2dca98;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .row-space {
+            margin-top: 60px;
+        }
+
+        .tiny-space {
+            margin-top: 20px;
+        }
+
+        .middle-space {
+            margin-top: 30px;
+        }
+
+        .huge-space {
+            margin-top: 100px;
+        }
+
+        .xlarge-space {
+            margin-top: 150px;
+        }
+
+        .about-us h1 {
+            color: black;
+            font-weight: 800;
+        }
+
+        .about-us h4 {
+            color: rgb(61, 61, 61);
+            margin-top: 30px;
+            line-height: 26px;
+
+
+        }
+
+        .about-us-text a {
+            color: black;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            margin-left: 70px;
+
+        }
+
+        .about-us-text h4 {
+            margin-top: 20px;
+        }
+
+        .about-us-text h5 {
+            margin-left: 70px;
+            margin-top: 10px;
+        }
+
+        .about-us-awesome i {
+            font-size: 26px;
+            color: #2dca98;
+            border: 2px solid #2dca98;
+            padding: 15px 15px 15px 15px;
+            border-radius: 50%;
+            margin-top: 10px;
+            position: absolute;
+
+        }
+
+        .team-image {
+            margin-left: -60px;
+            margin-top: 50px;
+        }
+
+        .team-image img {
+            height: 400px;
+            width: 600px;
+        }
+
+        .facts h1 {
+            color: black;
+            font-weight: bold;
+        }
+
+        .facts-counter span {
+            color: #2dca98;
+            font-size: 50px;
+        }
+
+        .box {
+            padding: 50px 20px;
+            margin-bottom: 50px;
+            text-align: center;
+            border: 1px solid #e6e6e6;
+            height: 200px;
+            position: relative;
+            background: #fafafa;
+        }
+
+        .service-icon {
+            border-radius: 50%;
+            text-align: center;
+            width: 72px;
+            height: 72px;
+            background: #2dc997;
+            margin-top: -85px;
+            margin-left: 125px;
+            justify-items: center;
+            position: absolute;
+
+
+        }
+
+        .service-icon:hover {
+            /* -moz-transform: scale(1.7);
+    -webkit-transform: scale(1.7);
+    transform: scale(1.7); */
+
+            transform: scale(1.2);
+            transition: ease-out 0.3s;
+
+
+        }
+
+        .service-icon:hover {
+            background-color: #fff;
+            border: 2px solid #2dc997;
+
+        }
+
+        .service-icon i {
+            text-align: center;
+            font-size: 30px;
+            margin-top: 20px;
+        }
+
+        .service-icon i:hover {
+            color: #2dc997;
+
+
+        }
+
+        /* .service-icon a:hover{
+    color:#2dc997;
+
+
+} */
+        .title a {
+            color: #131212;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 22px;
+        }
+
+        .description {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        #banner {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/call-to-action-bg.jpg) fixed center center;
+            background-size: cover;
+            padding: 100px;
+        }
+
+        .banner-text button {
+            color: #fff;
+            font-weight: bolder;
+            font-size: 16px;
+            border: 2px solid #fff;
+            border-radius: 50px;
+            padding: 10px 30px 10px 30px;
+            margin-top: 50px;
+        }
+
+        .banner-text button:hover {
+            background-color: #2dca98;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .banner-text h2 {
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .banner-text p {
+            color: #fff;
+            font-size: 16px;
+
+        }
+
+        .button-list {
+            list-style-type: none;
+
+        }
+
+        .button-list li {
+            display: inline;
+
+
+        }
+
+        .button-list button {
+            color: rgb(53, 53, 53);
+            font-size: 16px;
+            padding: 15px;
+        }
+
+        .button-list button:hover,
+        .button-list button:focus,
+        .button-list button:link,
+        .button-list button:active {
+            color: #fff;
+            text-decoration: none;
+            background-color: #2dc997;
+            border: 1px solid #2dc997;
+            border-radius: 5px;
+            position: relative;
+            padding: 8px 12px 8px 12px;
+
+        }
+
+        /* Portfolio Section
+--------------------------------*/
+
+        .portfolio-item {
+            overflow: hidden !important;
+        }
+
+        .portfolio-item img {
+            height: 180px;
+            width: 280px;
+            margin-top: 20px;
+
+        }
+
+        .details {
+            height: 50px;
+            background: #2dc997;
+            position: absolute;
+            width: 95.8%;
+            height: 50px;
+            bottom: -50px;
+            transition: all 500ms;
+        }
+
+        .details h4 {
+            font-size: 14px;
+            font-weight: 700;
+            color: #fff;
+            padding: 8px 0 2px 8px;
+            margin: 0;
+        }
+
+        .details span {
+            display: block;
+            color: #fff;
+            font-size: 13px;
+            padding-left: 8px;
+        }
+
+        .portfolio-item:hover .details {
+            bottom: 0px;
+        }
+
+        .portfolio-item:hover img {
+            top: -30px;
+        }
+
+        /* team */
+        /* ------------------- */
+        .team-photos img {
+            width: 260px;
+            height: 240px;
+            text-align: center;
+            box-shadow: 0 7px 18px 1px gray;
+            border-radius: 50%;
+        }
+
+        .member-text h4 {
+            margin-top: 30px;
+            font-weight: 800;
+        }
+
+        .member-text p {
+            letter-spacing: -0.5px;
+            font-weight: 100;
+        }
+
+        .member-awesome {
+            letter-spacing: 10px;
+            margin-top: 20px;
+            font-size: 20px;
+            color: rgb(158, 157, 157);
+        }
+
+        .member-awesome .fa-twitter:hover {
+            color: #2dc997;
+            cursor: pointer;
+        }
+
+        .member-awesome .fa-facebook:hover {
+            color: #2dc997;
+            cursor: pointer;
+        }
+
+        .member-awesome .fa-google-plus-g:hover {
+            color: #2dc997;
+            cursor: pointer;
+        }
+
+        .member-awesome .fa-linkedin-in:hover {
+            color: #2dc997;
+            cursor: pointer;
+        }
+
+        .address-awesome i {
+            color: #2dc997;
+            font-size: 30px;
+            margin-top: 20px;
+        }
+
+        .address p {
+            margin-top: -30px;
+            margin-left: 220px;
+            font-size: 14px;
+        }
+
+
+        .footer-awesome a {
+            background-color: rgb(27, 27, 27);
+            border: 1px solid rgb(27, 27, 27);
+            border-radius: 50%;
+            padding: 10px 10px 10px 10px;
+            margin: 2px;
+        }
+
+        .footer-awesome {
+            margin-top: 50px;
+            margin-left: 170px;
+
+        }
+
+        .footer-awesome i {
+            font-size: 18px;
+            text-align: center;
+            top: 2px;
+            position: relative;
+        }
+
+        .footer-awesome i:hover {
+            color: #fff;
+        }
+
+        .footer-awesome a:hover {
+            background-color: #2dc997;
+            color: white;
+            border: 1px solid #2dc997;
+        }
+
+        .form {
+            margin-top: 20px;
+        }
+
+        .btn-sub {
+            border: 1px solid #2dc997;
+            background: #2dc997;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .btn-sub:hover {
+            border: 1px solid #2dc997;
+            background: #2dc997;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer-background {
+            background-color: #1d1b1b;
+            border: 1px solid gray;
+            height: 100px;
+            left: 0;
+            right: 0;
+            position: absolute;
+        }
+
+        .footer-background h5 {
+            color: #fff;
+            margin-top: 30px;
+        }
+
+        .footer-background p {
+            color: #fff;
+        }
+
+        .footer-background a {
+            color: #2dc997;
+        }
+
+        #my-scroll {
+            height: 40px;
+            width: 40px;
+            cursor: pointer;
+            right: 10px;
+            bottom: 10px;
+            position: fixed;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header" >
+        <!-- <header id="header"> -->
+        <div class="container-fluid"id="top_content">
+            <div class="row">
+                <div class="col-sm-12 top-img darken-overlay">
+                    <div></div>
+                    <!-- body text -->
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 animated fadeInUp">
+                    <div class=" body-content ">
+                        <h1>WELCOME TO REGNA</h1>
+                        <h4>We are team of talented designers making websites with Bootstrap</h4>
+                    </div>
+                    <div class="btn-head">
+                        <button class="btn btn-link">GET STARTED</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- nav -->
+        <nav class=" navbar-fixed-top nav-size">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 ">
+                        <div class="col-sm-4 ">
+                            <div class="row">
+                                <ul class=" navbar-left">
+                                    <div class="logo"><a href="#"><img src="img/logo.png"></a></div>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-8">
+                            <div>
+                                <button type="button" class="navbar-toggle btn-icon" data-toggle="collapse"
+                                    data-target="#myNavbar">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+
+                            </div>
+                            <div class="collapse navbar-collapse " id="myNavbar">
+                                <ul class="nav navbar-nav list-nav ">
+
+                                    <li><a href="#top_content">HOME</a></li>
+                                    <li><a href="#about-us">ABOUT US</a></li>
+                                    <li><a href="#services">SERVICES</a></li>
+                                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                                    <li><a href="#team">TEAM</a></li>
+                                    <li><a class="dropdown-toggle" data-toggle="dropdown" href="#drop down">DROP
+                                            DOWN<span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li class="drop-down-list"><a href="#">Page 1-1</a></li>
+                                            <li class="drop-down-list"><a href="#">Page 1-2</a></li>
+                                            <li class="drop-down-list"><a href="#">Page 1-3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#contact">CONTACT US</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+
+        <!-- nav scroll -->
+        <nav class=" navbar-fixed-top nav-size-scroll hidden">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 ">
+                        <div class="col-sm-4 ">
+                            <div class="row">
+                                <ul class=" navbar-left">
+                                    <div class="logo-scroll"><a href="#"><img src="img/logo.png"></a></div>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-8">
+                            <div>
+                                <button type="button" class="navbar-toggle btn-icon" data-toggle="collapse"
+                                    data-target="#myNavbar">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+
+                            </div>
+                            <div class="collapse navbar-collapse " id="myNavbar">
+                                <ul class="nav navbar-nav list-nav-scroll ">
+
+                                    <li><a href="#top_content">HOME</a></li>
+                                    <li><a href="#about-us">ABOUT US</a></li>
+                                    <li><a href="#services">SERVICES</a></li>
+                                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                                    <li><a href="#team">TEAM</a></li>
+                                    <li><a class="dropdown-toggle" data-toggle="dropdown" href="#drop down">DROP
+                                            DOWN<span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li class="drop-down-list"><a href="#">Page 1-1</a></li>
+                                            <li class="drop-down-list"><a href="#">Page 1-2</a></li>
+                                            <li class="drop-down-list"><a href="#">Page 1-3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#contact">CONTACT US</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+
+    </header>
+    <!-- about us -->
+    <div class="container row-space " id="about-us">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="col-sm-6 about-us animated fadeInLeft">
+                    <h1>Few Words About Us</h1>
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.</h4>
+                    <div class="about-us-awesome tiny-space"><i class="fas fa-suitcase"></i></div>
+                    <div class="about-us-text middle-space">
+                        <h4><a href="#">EIUSMOD TEMPOR</a></h4>
+                        <h5>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta
+                            nobis est eligendi</h5>
+                    </div>
+                    <div class="about-us-awesome tiny-space"><i class="far fa-image"></i></div>
+                    <div class="about-us-text middle-space">
+                        <h4><a href="#">MAGNI DOLORES</a></h4>
+                        <h5>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                            anim id est laborum</h5>
+                    </div>
+                    <div class="about-us-awesome tiny-space"><i class="fas fa-chart-bar"></i></div>
+                    <div class="about-us-text middle-space">
+                        <h4><a href="#">DOLOR SITEMA</a></h4>
+                        <h5>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat tarad limino ata</h5>
+                    </div>
+                </div>
+
+                <div class="col-sm-1 team-image text-center animated fadeInRight "><img src="img/about-img.jpg"></div>
+            </div>
+        </div>
+    </div>
+    <!-- facts -->
+    <div class="container text-center huge-space">
+        <div class="row">
+            <div class="col-sm-12 facts">
+                <h1>FACTS</h1>
+                <h4>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</h4>
+            </div>
+        </div>
+    </div>
+    <!-- facts counter -->
+    <div class="container text-center row-space wow">
+        <div class="row">
+            <div class="col-sm-12 facts-counter animated fadeIn">
+                <div class="col-sm-3"><span class="counter-up">232</span>
+                    <p>Clients</p>
+                </div>
+                <div class="col-sm-3"><span class="counter-up">521</span>
+                    <p>Projects</p>
+                </div>
+                <div class="col-sm-3"><span class="counter-up">1,463</span>
+                    <p>Hours Of Support</p>
+                </div>
+                <div class="col-sm-3"><span class="counter-up">15</span>
+                    <p>Hard Workers</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- services -->
+    <div class="container text-center huge-space" id="services">
+        <div class="row">
+            <div class="col-sm-12 facts">
+                <h1>SERVICES</h1>
+                <h4>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</h4>
+            </div>
+        </div>
+    </div>
+    <!-- services content -->
+    <div class="container text-center row-space">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="col-sm-4">
+                    <div class="box">
+                        <div class="service-icon"><a href="#"><i class="fa fa-desktop"></i></a></div>
+                        <h4 class="title"><a href="#">Lorem Ipsum</a></h4>
+                        <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias
+                            excepturi sint occaecati cupiditate non provident</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="box">
+                        <div class="service-icon"><a href="#"><i class="fas fa-chart-bar"></i></a></div>
+                        <h4 class="title"><a href="#">Dolor Sitema</a></h4>
+                        <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea commodo consequat tarad limino ata</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="box">
+                        <div class="service-icon"><a href="#"><i class="fa fa-paper-plane"></i></a></div>
+                        <h4 class="title"><a href="#">Sed ut perspiciatis</a></h4>
+                        <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                            dolore eu fugiat nulla pariatur</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- services second row content -->
+    <div class="container text-center row-space">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="col-sm-4">
+                    <div class="box">
+                        <div class="service-icon"><a href="#"><i class="fas fa-image"></i></a></div>
+                        <h4 class="title"><a href="#">MAGNI DOLORES</a></h4>
+                        <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                            deserunt mollit anim id est laborum</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="box">
+                        <div class="service-icon"><a href="#"><i class="fa fa-road"></i></a></div>
+                        <h4 class="title"><a href="#">NEMO ENIM</a></h4>
+                        <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                            praesentium voluptatum deleniti atque</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="box">
+                        <div class="service-icon"><a href="#"><i class="fa fa-shopping-bag"></i></a></div>
+                        <h4 class="title"><a href="#">EIUSMOD TEMPOR</a></h4>
+                        <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero
+                            tempore, cum soluta nobis est eligendi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- banner call to action -->
+    <section id="banner" class="row-space">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 banner-text">
+                    <div class="col-sm-10">
+                        <h2>Call To Action</h2>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                            mollit anim id est laborum.</p>
+                    </div>
+                    <div class="col-sm-2"><button class="btn btn-link">Call To Action</button></div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- portfolio -->
+    <div class="container text-center row-space" id="portfolio">
+        <div class="row">
+            <div class="col-sm-12 facts">
+                <h1>PORTFOLIO</h1>
+                <h4>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</h4>
+            </div>
+        </div>
+    </div>
+    <!-- portfolio list -->
+    <div class="container text-center row-space">
+        <div class="row">
+            <div class="col-sm-12">
+                <ul class="filter-button-group button-list">
+                    <li><button data-filter="*" class="btn btn-link "> ALL</button></li>
+                    <li><button data-filter=".filter-app" class="btn btn-link"> APP</button></li>
+                    <li><button data-filter=".filter-card" class="btn btn-link"> CARD</button></li>
+                    <li><button data-filter=".filter-logo" class="btn btn-link"> LOGO</button></li>
+                    <li><button data-filter=".filter-web" class="btn btn-link"> WEB</button></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- portfolio images -->
+    <div class="container middle-space portfolio-images">
+        <div class="row ">
+            <div class="grid">
+                <div class="col-sm-3 col-xs-6 portfolio-item filter-app"><a href="#"><img src="img/portfolio/app1.jpg"
+                            alt="">
+                        <div class="details">
+                            <h4>APP 1</h4><span>Alored dono par</span>
+                        </div>
+                    </a></div>
+                <div class="col-sm-3 col-xs-6 portfolio-item filter-app"><a href="#"><img src="img/portfolio/app2.jpg"
+                            alt="">
+                        <div class="details">
+                            <h4>APP 2</h4><span>Alored dono par</span>
+                        </div>
+                    </a></div>
+                <div class="col-sm-3 col-xs-6 portfolio-item filter-app"><a href="#"><img src="img/portfolio/app3.jpg"
+                            alt="">
+                        <div class="details">
+                            <h4>APP 3</h4><span>Alored dono par</span>
+                        </div>
+                    </a></div>
+                <div class="col-sm-3 col-xs-6 portfolio-item filter-logo"><a href="#"><img src="img/portfolio/logo1.jpg"
+                            alt="">
+                        <div class="details">
+                            <h4>LOGO 1</h4><span>Alored dono par</span>
+                        </div>
+                    </a></div>
+                <div class="col-sm-3 col-xs-6 portfolio-item filter-logo"><a href="#"><img src="img/portfolio/logo2.jpg"
+                            alt="">
+                        <div class="details">
+                            <h4>LOGO 2</h4><span>Alored dono par</span>
+                        </div>
+                    </a></div>
+                <div class="col-sm-3 col-xs-6 portfolio-item filter-logo"><a href="#"><img src="img/portfolio/logo3.jpg"
+                            alt="">
+                        <div class="details">
+                            <h4>LOGO 3</h4><span>Alored dono par</span>
+                        </div>
+                    </a></div>
+                <div class="col-sm-3 col-xs-6 portfolio-item filter-web"><a href="#"><img src="img/portfolio/web1.jpg"
+                            alt="">
+                        <div class="details">
+                            <h4>WEB 1</h4><span>Alored dono par</span>
+                        </div>
+                    </a></div>
+                <div class="col-sm-3 col-xs-6 portfolio-item filter-web"><a href="#"><img src="img/portfolio/web2.jpg"
+                            alt="">
+                        <div class="details">
+                            <h4>WEB 2</h4><span>Alored dono par</span>
+                        </div>
+                    </a></div>
+                <div class="col-sm-3 col-xs-6 portfolio-item filter-web"><a href="#"><img src="img/portfolio/web3.jpg"
+                            alt="">
+                        <div class="details">
+                            <h4>WEB 3</h4><span>Alored dono par</span>
+                        </div>
+                    </a></div>
+                <div class="col-sm-3 col-xs-6 portfolio-item filter-card"><a href="#"><img src="img/portfolio/card1.jpg"
+                            alt="">
+                        <div class="details">
+                            <h4>CARD 1</h4><span>Alored dono par</span>
+                        </div>
+                    </a></div>
+                <div class="col-sm-3 col-xs-6 portfolio-item filter-card"><a href="#"><img src="img/portfolio/card2.jpg"
+                            alt="">
+                        <div class="details">
+                            <h4>CARD 2</h4><span>Alored dono par</span>
+                        </div>
+                    </a></div>
+                <div class="col-sm-3 col-xs-6 portfolio-item filter-card"><a href="#"><img src="img/portfolio/card3.jpg"
+                            alt="">
+                        <div class="details">
+                            <h4>CARD 3</h4><span>Alored dono par</span>
+                        </div>
+                    </a></div>
+            </div>
+        </div>
+    </div>
+    <!-- team -->
+    <div class="container text-center xlarge-space" id="team">
+        <div class="row">
+            <div class="col-sm-12 facts">
+                <h1>TEAM</h1>
+                <h4>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</h4>
+            </div>
+        </div>
+    </div>
+    <!-- team-content -->
+    <div class="container text-center row-space ">
+        <div class="row">
+            <div class="col-sm-12 team-photos">
+                <div class="col-sm-3"><img src="img/team-1.jpg">
+                    <div class="member-text">
+                        <h4>Walter White</h4>
+                        <p>Chief Executive Officer</p>
+                    </div>
+                    <div class="member-awesome"><i class="fab fa-twitter"></i><i class="fab fa-facebook"></i><i
+                            class="fab fa-google-plus-g"></i><i class="fab fa-linkedin-in"></i></div>
+                </div>
+                <div class="col-sm-3"><img src="img/team-2.jpg">
+                    <div class="member-text">
+                        <h4>Sarah Jhinson</h4>
+                        <p>Product Manager</p>
+                    </div>
+                    <div class="member-awesome"><i class="fab fa-twitter"></i><i class="fab fa-facebook"></i><i
+                            class="fab fa-google-plus-g"></i><i class="fab fa-linkedin-in"></i></div>
+                </div>
+                <div class="col-sm-3"><img src="img/team-3.jpg">
+                    <div class="member-text">
+                        <h4>William Anderson</h4>
+                        <p>CTO</p>
+                    </div>
+                    <div class="member-awesome"><i class="fab fa-twitter"></i><i class="fab fa-facebook"></i><i
+                            class="fab fa-google-plus-g"></i><i class="fab fa-linkedin-in"></i></div>
+                </div>
+                <div class="col-sm-3"><img src="img/team-4.jpg">
+                    <div class="member-text">
+                        <h4>Amanda Jepson</h4>
+                        <p>Accountant</p>
+                    </div>
+                    <div class="member-awesome"><i class="fab fa-twitter"></i><i class="fab fa-facebook"></i><i
+                            class="fab fa-google-plus-g"></i><i class="fab fa-linkedin-in"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- contact -->
+    <div class="container text-center huge-space" id="contact">
+        <div class="row">
+            <div class="col-sm-12 facts">
+                <h1>CONTACT</h1>
+                <h4>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</h4>
+            </div>
+        </div>
+    </div>
+    <!-- map -->
+
+    <div class="row row-space">
+        <div class="col-sm-12 ">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22864.11283411948!2d-73.96468908098944!3d40.630720240038435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sbg!4v1540447494452"
+                width="100%" height="380" frameborder="0"></iframe>
+        </div>
+    </div>
+    <!-- form and address -->
+    <div class="container row-space text-center">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="col-sm-6">
+                    <div class="address-awesome"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="address">
+                        <p>A108 Adam Street <br> New York, NY 535022</p>
+                    </div>
+                    <div class="address-awesome"><i class="fas fa-envelope"></i></div>
+                    <div class="address">
+                        <p>info@example.com</p>
+                    </div>
+                    <div class="address-awesome"><i class="fas fa-phone"></i></div>
+                    <div class="address">
+                        <p>+1 5589 55488 55s</p>
+                    </div>
+                    <div class="footer-awesome"><a class="twitter" href="#"><i class="fab fa-twitter"></i></a><a
+                            class="facebook" href="#"><i class="fab fa-facebook"></i></a><a class="instagram"
+                            href="#"><i class="fab fa-instagram"></i></a><a class="linkedin" href="#"><i
+                                class="fab fa-linkedin"></i></a><a class="google" href="#"><i
+                                class="fab fa-google-plus-g"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <form class="form" action="">
+                        <div class="form-group "><input type="text" placeholder="Your Name" class="form-control"></div>
+                        <div class="form-group "><input type="text" placeholder="Your Email" class="form-control"></div>
+                        <div class="form-group "><input type="text" placeholder="Subject" class="form-control"></div>
+                        <div class="form-group "><textarea name="" id="" cols="58" rows="6" placeholder="Message"
+                                class="form-control"></textarea></div>
+                        <div class="btn btn-lg btn-link btn-sub">Send Message</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="container-fluid row-space text-center">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="footer-background">
+                    <h5>© Copyright Regna. All Rights Reserved</h5>
+                    <p>Designed by <a href="#">BootstrapMade</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img src="scroll/scroll.png" id="my-scroll">
+
+
+
+
+
+
+
+
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/wow/lib/main.js"></script>
+    <script src="node_modules/wowjs/dist/wow.min.js"></script>
+    <script src="node_modules/waypoints/lib/jquery.waypoints.min.js"></script>
+    <script src="node_modules/counterup/jquery.counterup.min.js"></script>
+    <script src="node_modules/isotope-layout/dist/isotope.pkgd.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!-- <script src="node_modules/fancybox/dist/js/jquery.fancybox.pack.js"></script> -->
+    <script>
+
+
+        // scroll navbar
+        $(document).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+                $('.nav-size').fadeOut('slow');
+                $('.nav-size-scroll').fadeIn('slow');
+                $('.nav-size-scroll').removeClass('hidden');
+
+            } else {
+                $('.nav-size-scroll').fadeOut('slow');
+                $('.nav-size').fadeIn('slow');
+                $('.nav-size').removeClass('hidden');
+
+            }
+        });
+
+        // counter up
+
+        $('.counter-up').counterUp();
+
+        // isotope
+        var $grid = $('.grid').isotope({
+        });
+        $('.filter-button-group').on('click', 'button', function () {
+            var filterVal = $(this).attr('data-filter');
+            $grid.isotope({ filter: filterVal });
+
+        });
+        // scrollup
+        $(window).scroll(function (e) {
+
+            if ($(this).scrollTop() > 100) {
+                $('#my-scroll').fadeIn();
+            }
+            else {
+                $('#my-scroll').fadeOut();
+            }
+        });
+        $('#my-scroll').click(function () {
+            $('html').animate({
+                scrollTop: 0
+            }, 1500);
+        });
+
+        // scrollspy
+        $("body").scrollspy({
+            target: '.navbar',
+            offset: 50,
+        });
+        $("#myNavbar a").on('click', function (e) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var v = this.hash;
+                $('html').animate({
+                    scrollTop: $(v).offset().top - $('.nav').outerHeight(true)
+                }, 1000);
+
+            }
+        });
+
+    </script>
+</body>
+
+</html>
