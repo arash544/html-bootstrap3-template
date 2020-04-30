@@ -14,7 +14,7 @@
     "counterup": "^1.0.2",
     "fontawesome": "^5.6.3",
     "isotope-layout": "^3.0.6",
-    "jquery": "^1.12.4",
+    "jquery": "^3.5.0",
     "waypoints": "^4.0.1",
     "wow": "0.0.6",
     "wowjs": "^1.1.3"
